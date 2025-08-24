@@ -5,7 +5,7 @@ Our project detects unusual behavior in surveillance videos using AI. It can aut
 
 We use YOLOv5 to detect people and objects, and an unsupervised anomaly detection model to flag anything abnormal in real time.
 
-## 2. How We Did It
+## 2. How I Did It
 **Technologies Used:** Python, OpenCV, YOLOv5, Isolation Forest, Matplotlib  
 
 **Steps:**
