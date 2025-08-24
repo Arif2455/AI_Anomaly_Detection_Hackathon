@@ -1,50 +1,35 @@
-# Content of your README
+# This line is just for you in Colab, it will NOT appear in README
 readme_text = """
 # AI-Powered Anomaly Detection in Surveillance Videos
 
 ## 1. Proposed Solution
-We propose an AI-powered anomaly detection system that identifies unusual behavior in surveillance videos using deep learning. The system automatically detects suspicious activities such as loitering, unusual movement, and abandoned objects, reducing reliance on manual monitoring.  
+Our project detects unusual behavior in surveillance videos using AI. It can automatically spot suspicious activities like loitering, unusual movement, or abandoned objects.
 
-Our approach is unique because it combines **YOLOv5** for object/person detection with an **unsupervised anomaly detection model** to flag abnormal events in real time.
+## 2. How We Did It
+Python, OpenCV, YOLOv5, Isolation Forest, Matplotlib
 
-## 2. Technical Approach
+Steps:
+1. Collected video datasets.
+2. Detected people & objects with YOLOv5.
+3. Analyzed movement patterns with anomaly detection.
+4. Flagged unusual activity.
+5. Displayed results on dashboard.
 
-**Technologies Used:** Python, OpenCV, YOLOv5, Isolation Forest, Matplotlib
+## 3. Feasibility
+Tested on pre-recorded videos, scalable to live CCTV feeds.
 
-**Process:**
-1. Collect input video dataset (UCSD Anomaly Dataset / Avenue Dataset).  
-2. Detect people & objects using YOLOv5.  
-3. Extract movement patterns and feed into an anomaly detection model.  
-4. Flag unusual activity with timestamps.  
-5. Display results on a simple dashboard & visualization chart.
+## 4. References
+- UCSD Pedestrian Dataset
+- Avenue Dataset
+- YOLOv5 GitHub
+- Isolation Forest (Scikit-Learn)
 
-## 3. Feasibility and Viability
-
-**Feasibility:**  
-- Can be implemented quickly using public datasets, open-source models, and lightweight Python libraries.
-
-**Risks:**  
-- Real-time deployment may require GPU and optimized pipelines.
-
-**Mitigation:**  
-- For the hackathon, we simulate with pre-recorded videos.  
-- System can be scaled to real CCTV feeds in the future.
-
-## 4. Research and References
-
-- UCSD Pedestrian Anomaly Dataset: [Link](http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm)  
-- Avenue Dataset: [Link](http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html)  
-- YOLOv5 GitHub: [Link](https://github.com/ultralytics/yolov5)  
-- Isolation Forest (Scikit-Learn): [Link](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html)
-
-## 5. Usage Instructions
-1. Open `main_notebook.ipynb` in Google Colab.  
-2. Run all cells sequentially.  
-3. Check the dashboard and visualization outputs for flagged anomalies.
+## 5. How to Run
+1. Open main_notebook.ipynb in Colab.
+2. Run all cells.
+3. Check the dashboard and charts.
 """
 
-# Write the README.md file
+# Write README.md (the file itself will not contain Python comments)
 with open("README.md", "w") as f:
     f.write(readme_text)
-
-print("README.md created successfully!")
