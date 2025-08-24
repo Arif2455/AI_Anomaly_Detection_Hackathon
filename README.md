@@ -48,4 +48,3 @@ with open("README.md", "w") as f:
     f.write(readme_text)
 
 print("README.md created successfully!")
-
